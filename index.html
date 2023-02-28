@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <h1>Add Users</h1>
+   
+</head>
+<body>
+    <form action="/addUser" method="post">
+        User Id <input type="text" id="userid" name="userid">
+       User Name  <input type="text" id="username" name="username">
+        DOB <input type="date" id="dob" name="dob">
+        Profession <input type="text" id="profession" name="profession">
+         <button type="submit" name="Submit">Submit</button>
+     </form>
+     <form action="/particularUser" method="post">
+        <h1>particularUser</h1>
+        UserId <input type="text" id="uid" name="uid">
+        <button type="submit" name="submit">Get User Info</button>
+     </form>
+     <form action="/deleteUser" method="post">
+        <h1>deleteUser</h1>
+        UserId <input type="text" id="uid" name="uid">
+        <button type="submit" name="submit">deleteUser</button>
+     </form>
+     <form action="/showAll" method="get">
+        <h1>ShowAll UserDetails</h1>
+        <button type="submit" name="submit">ShowAll</button>
+     </form>
+</body>
+</html>
